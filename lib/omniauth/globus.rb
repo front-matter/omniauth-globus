@@ -1,2 +1,3 @@
-require "omniauth/globus/version"
+# frozen_string_literal: true
+
 require 'omniauth/strategies/globus'
