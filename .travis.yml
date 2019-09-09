@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.4.1
+install:
+- travis_retry bundle install
+script: bundle exec rspec
+notifications:
+  slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
+deploy:
+  provider: rubygems
+  api_key:
+    secure: uE7wQ63qRd3hnuzi2omMNoAcJJfQ/UQqk67qw2llQVYMbQlwgD6nnF5ipkPuqdAxPKZycUoZuD/uFKGK1B5pSPZeMTfFmTls3vPj6kLWeUCNZkZXfOsPPzhipRmxMbuxaCn6IqNtkTavsjC5xkOeBDw9aRTMRphyrwewWtk83NlwpRefNVx1SxU6IAxpySEWpjQ/PsLvJ+NmQuPl6KXlTooDPpaVHaaW9IDLtFoTK4GGWLGiDYWkhwQerUvczxvyuNGr/o0j8obCKau6lgv8eAj1f9W8pXmbvxq8Opp3/8chSvT98sO+L5RwigJYu6X7B1xVZGSNAuOVzNRagGkF2LE20b4p+1RqpmqCLViZcfPXRuSLPD4QlyRqjPbuma1mSQ/7zR8JTyobDJfyrQbuJNu+q96Edf4ZzHATDWik6sWRaU3Qcv5MN3NKgSwB0jbHgdgUeSKZusN4vkpNN4n1uxXnII/7A2b7W9U8wPFqmwhopB9egOxP9BQERFu4GxtI1TOPjIlh3tKy8SjSF0KnunHbaI1s6UrpjEh+mS5k9WryJtRmINFRI+ZHeCI6Sl5sXococnczDImG2AH7PEJ1zZ3rq/JH7J4HJ2moJW6xhvqVhoI1i9ti1VRqDE82GwRb0QE88eS2DZX2/b6J1faxlGuj1Cup+xzOrLnj9pctZLc=
+  gem: omniauth-globus
+  on:
+    tags: true
+    repo: datacite/omniauth-globus
