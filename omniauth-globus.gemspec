@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary       = "Globus Auth OpenId connect Strategy for OmniAuth 1.0"
   s.date          = Date.today
   s.description   = "Enables third-party client apps to authenticate with the Globus Auth service via OpenID Connect"
-  s.require_paths = ['lib']
+  s.require_paths = ["lib"]
   s.version       = OmniAuth::Globus::VERSION
   s.extra_rdoc_files = ["README.md"]
   s.license       = "MIT"
@@ -25,8 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency "jwt", ">= 2.0"
   s.add_dependency "omniauth", "~> 1.9"
   s.add_dependency "omniauth-oauth2", "~> 1.6"
-  s.add_development_dependency 'bundler', '~> 1.0'
-  s.add_development_dependency 'codeclimate-test-reporter', "~> 1.0.0"
+  s.add_development_dependency "bundler", "~> 1.0"
+  s.add_development_dependency "codeclimate-test-reporter", "~> 1.0.0"
   s.add_development_dependency "rack-test", "~> 0.6.3"
   s.add_development_dependency "rspec", "~> 3.4"
   s.add_development_dependency "rubocop", "~> 0.68"
