@@ -1,26 +1,21 @@
 language: ruby
 rvm:
 - 2.4.1
-
 addons:
   code_climate:
-    repo_token: $CODECLIMATE_REPO_TOKEN
-
+    repo_token: "$CODECLIMATE_REPO_TOKEN"
 install:
 - travis_retry bundle install
-
 script:
 - bundle exec rspec
 - bundle exec codeclimate-test-reporter
-
 deploy:
   provider: rubygems
   api_key:
-    secure: uE7wQ63qRd3hnuzi2omMNoAcJJfQ/UQqk67qw2llQVYMbQlwgD6nnF5ipkPuqdAxPKZycUoZuD/uFKGK1B5pSPZeMTfFmTls3vPj6kLWeUCNZkZXfOsPPzhipRmxMbuxaCn6IqNtkTavsjC5xkOeBDw9aRTMRphyrwewWtk83NlwpRefNVx1SxU6IAxpySEWpjQ/PsLvJ+NmQuPl6KXlTooDPpaVHaaW9IDLtFoTK4GGWLGiDYWkhwQerUvczxvyuNGr/o0j8obCKau6lgv8eAj1f9W8pXmbvxq8Opp3/8chSvT98sO+L5RwigJYu6X7B1xVZGSNAuOVzNRagGkF2LE20b4p+1RqpmqCLViZcfPXRuSLPD4QlyRqjPbuma1mSQ/7zR8JTyobDJfyrQbuJNu+q96Edf4ZzHATDWik6sWRaU3Qcv5MN3NKgSwB0jbHgdgUeSKZusN4vkpNN4n1uxXnII/7A2b7W9U8wPFqmwhopB9egOxP9BQERFu4GxtI1TOPjIlh3tKy8SjSF0KnunHbaI1s6UrpjEh+mS5k9WryJtRmINFRI+ZHeCI6Sl5sXococnczDImG2AH7PEJ1zZ3rq/JH7J4HJ2moJW6xhvqVhoI1i9ti1VRqDE82GwRb0QE88eS2DZX2/b6J1faxlGuj1Cup+xzOrLnj9pctZLc=
+    secure: lEUHxqrw71LBPWKy8PS9EriAFwbeNDsopIkEX1ssU2FbZSMCiE4p4AYC+C+KjmoJ7mNjz+0jtqEIfVgKT93CpP6AqRGG3uxHBXhslyuEFe/ej+QrMb+gzIDZIA3leW0IgPhi7Rtk24RssPmtFAs0wAMM3iOS8lOPpqO5kWGmWMExezcpiVxPld2KIZksLUvwflyOs9aG1+n0Zt5FNyrXKI3W9rK3BytwnPZn2f4ahc8IP5u5jjhnM0tvG697SNQm/GKGkOcQ3iJgZ7RpakosHvocrTGUH+q1FZBpqG2FDKn0HygpQCs30puEIqAlnCBxDoI53G/xjP6CaNr7JCLBYjUMJZ91nJvwHaMfA3nnDEEI3p+MrsV3lwAyvpXQxJeWt3hM1bHcH2pIql2hGMlx6f5XnPCvFaUQwN1Fi534xVCBOSEXCr2G9oStOpW5SA/U7jvohUiCZhIK7eSR5i4w1EbCsU9nQWZYjvX0EprYoVlBqgLGZEKK02JCIwGXPLVYfJwzNBv0uBtiNBkwO8jHVaAEVrJL4Ka8TBy/V3B86mZ+W5EvP6kn6lJCh8Sh7bwpj0NXKllRw2sSz9ukybayLan/OcSgj98LgRKJ09iydxwsTFIVD4kzuGidF+qtT6ImLgD4qWMr4mgCSlsJp83fOzpdzDVLlz+T3tSVB42tNjE=
   gem: omniauth-globus
   on:
     tags: true
     repo: datacite/omniauth-globus
-
 notifications:
   slack: datacite:Wt8En0ALoTA6Kjc5EOKNDWxN
