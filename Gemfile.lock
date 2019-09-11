@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    omniauth-globus (0.8.5)
-      jwt (>= 2.0)
+    omniauth-globus (0.8.6)
+      jwt (~> 2.0)
       omniauth (~> 1.9)
       omniauth-oauth2 (~> 1.6)
 
@@ -86,12 +86,12 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0)
-  codeclimate-test-reporter (~> 1.0.0)
+  codeclimate-test-reporter (~> 1.0, >= 1.0.9)
   omniauth-globus!
   rack-test (~> 0.6.3)
   rspec (~> 3.4)
   rubocop (~> 0.68)
-  simplecov
+  simplecov (~> 0.13.0)
   webmock (~> 3.0, >= 3.0.1)
 
 BUNDLED WITH
