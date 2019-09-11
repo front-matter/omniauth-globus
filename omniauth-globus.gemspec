@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.email         = ["mfenner@datacite.org"]
   s.name          = "omniauth-globus"
   s.homepage      = "https://github.com/datacite/omniauth-globus"
-  s.summary       = "Globus Auth OpenId connect Strategy for OmniAuth 1.0"
+  s.summary       = "Globus OpenId connect Strategy for OmniAuth 1.0"
   s.date          = Date.today
-  s.description   = "Enables third-party client apps to authenticate with the Globus Auth service via OpenID Connect"
+  s.description   = "Enables third-party client apps to authenticate with the Globus service via OpenID Connect"
   s.require_paths = ["lib"]
   s.version       = OmniAuth::Globus::VERSION
   s.extra_rdoc_files = ["README.md"]
