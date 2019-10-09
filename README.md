@@ -1,5 +1,6 @@
 # omniauth-globus
 
+[![Identifier](https://img.shields.io/badge/doi-10.14454%2F81gp--9y63-fca709.svg)](https://doi.org/10.14454/81gp-9y63)
 [![Gem Version](https://badge.fury.io/rb/omniauth-globus.svg)](https://badge.fury.io/rb/omniauth-globus)
 [![Build Status](https://travis-ci.com/datacite/omniauth-globus.svg?branch=master)](https://travis-ci.com/datacite/omniauth-globus)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/13f9467872e9a688e9cb/test_coverage)](https://codeclimate.com/github/datacite/omniauth-globus/test_coverage)
