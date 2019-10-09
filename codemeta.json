@@ -1,0 +1,38 @@
+{
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://doi.org/10.14454/81gp-9y63",
+  "agents": {
+    "@id": "http://orcid.org/0000-0003-1419-2405",
+    "@type": "person",
+    "name": "Martin Fenner",
+    "affiliation": "DataCite",
+    "mustBeCited": true,
+    "isMaintainer": true,
+    "isRightsHolder": true
+  },
+  "identifier": "https://doi.org/10.14454/81gp-9y63",
+  "codeRepository": "https://github.com/datacite/omniauth-globus",
+  "controlledTem": "software",
+  "dateCreated": "2019-09-11",
+  "datePublished": "2019-09-11",
+  "dateModified": "2019-09-11",
+  "description": "Globus OAuth 2.0 Strategy for the OmniAuth Ruby authentication framework, with support for OpenID Connect. Provides basic support for authenticating a client application via the Globus service.",
+  "isAutomatedBuild": true,
+  "licenseId": "MIT",
+  "publisher": "DataCite",
+  "tags": [
+    "omniauth",
+    "devise",
+    "globus",
+    "openid connect",
+    "authentication"
+  ],
+  "title": "Omniauth-globus: provides basic support for authenticating a client application via the Globus service.",
+  "programmingLanguage": {
+    "name": "Ruby",
+    "version": "≥ 2.3.",
+    "URL": "https://www.ruby-lang.org"
+  },
+  "readme": "https://github.com/datacite/omniauth-globus/blob/master/README.md"
+}
