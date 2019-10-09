@@ -28,7 +28,7 @@
     "openid connect",
     "authentication"
   ],
-  "title": "Omniauth-globus: provides basic support for authenticating a client application via the Globus service.",
+  "title": "Omniauth-globus: authenticate a Ruby client application via OpenID Connect and the Globus service.",
   "programmingLanguage": {
     "name": "Ruby",
     "version": "≥ 2.3.",
