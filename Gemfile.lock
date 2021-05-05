@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth-globus (0.9.0)
+    omniauth-globus (0.9.1)
       jwt (~> 2.0)
       omniauth (>= 1.9)
       omniauth-oauth2 (~> 1.6)
