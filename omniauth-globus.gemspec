@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   # Declary dependencies here, rather than in the Gemfile
   s.add_dependency "jwt", "~> 2.0"
-  s.add_dependency "omniauth", "~> 1.9"
+  s.add_dependency "omniauth", ">= 1.9"
   s.add_dependency "omniauth-oauth2", "~> 1.6"
   s.add_development_dependency "bundler", "~> 1.0"
   s.add_development_dependency "codeclimate-test-reporter", "~> 1.0", ">= 1.0.9"
